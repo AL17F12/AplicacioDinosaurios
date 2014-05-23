@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+               
+        
+        <link href="css/jquery.mobile.structure-1.3.2.min.css" rel="stylesheet">
+        <link href="css/dino-theme.min.css" rel="stylesheet" href="css/mi estilo.css">
+
+    
+    <style>
+  .panel-content {
+    padding: 1em;
+  }
+
+
+
+  #vista
+  {
+	  position:absolute;
+	  left:30%;
+
+  }
+  
+  
+  #logo
+  {
+	  position:absolute;
+	  top:84px;
+	  left:10%;
+  }
+
+#vista img {
+    -webkit-transition:1s;
+			  opacity: 0;  
+}
+#vista img.clicked{
+     opacity:1.0;
+ }
+  
+  
+  #logo img {
+    -webkit-transition:1s;
+}
+#logo img.clicked{
+     opacity:0;
+ }
+
+  
+  </style>
+    
+        <script src="js/jquery-1.9.1.min.js"></script>
+        <script src="js/jquery.mobile-1.3.2.min.js"></script>
+        <script src="js/acciones.js"></script>        
+        
+
+
+
+        
+        <!-- necesario*/ -->
+    </head>
+    
+    <body>
+
+     
+
+           
+<div data-role="page" id="bienvenida" data-theme="a">
+
+	
+    <div data-role="content">	
+
+    <div id="logo" align="center" >
+<img src="imagenes/T-Rex-Head.png" width="82" height="82">
+    </div>
+    <div id="vista" align="center">
+<img  id="full_rex" src="imagenes/T-Rex-View.png" width="300" height="168" >
+    </div>
+
+	<audio id="roar" preload="auto" src="audio/roar.mp3">
+       </audio>
+    </div>
+    
+
+</div>
+
+
+    
+        <div data-role="page" id="principal" data-theme="a">
+	<div data-role="header" data-position="fixed">
+		<h1>Dinosaurios</h1>
+        <div align="center">
+        <a href="#defaultpanel" data-role="button" data-icon="myapp-rex" data-iconpos="notext" data-inline="true">Menú</a>
+        </div>   
+        
+	</div>
+    
+      
+
+
+     
+	<div data-role="content">	
+     <div style="margin: 0 auto 0 auto; width:70%; height:80%;" align="justify">
+      <p> Todos aquellos animales que existieron en la tierra antes de que el hombre comenzara a mantener un registro de sus historia, se llaman "prehistoricos". Estos incluyen las primeras señales de vida, 600 millones de años atrás, peces prehistoricos, dinosaurios y desde luego ¡El hombre!.
+      </p>
+      <div align="center">
+<img src="imagenes/Chart.png" width="363" height="464">
+</div>
+<div>
+<p>
+Nuestra tierra tiene 4,54 mil millones de años y con el transcurso de todos estos años han pasado numerosas formas de vida sobre ella, especies que hace mucho se extinguieron y otras que en cambio evolucionaron y todavía forman parte de nuestro ecosistema.
+
+Del numeroso grupo de seres extintos hacen parte los poderosos y admirados dinosaurios.  Los dinosaurios fueron enormes reptiles que habitaron en nuestro planeta tierra durante 160 millones de años aproximadamente, en la era mesozoica y se encuentran ubicados en el superorden de vertebrados saurósipdos.  La palabra dinosaurio viene del griego y significa “lagarto terrible”, el científico Richard Owen fue quien empleó  el término en 1841, porque para él eran enormes lagartos que le infundían respeto y admiración.
+
+El conocimiento que se tiene de los dinosaurios es gracias a los  restos  fósiles que han sido hallados en todos los continentes. Con los años y con ayuda de la tecnología se han hecho simulaciones  muy  reales de estos animales, y gracias a esto, es que podemos tener una idea de cómo eran estas maravillosas criaturas, cómo vivían y cuáles eran sus hábitos.
+</P>
+</div>
+     </div>
+	</div>
+    
+	<div data-role="footer" data-position="fixed">
+Kimberly Luna Martinez
+	</div>
+    
+<!-- Panel Menu  -->
+  <div data-role="panel" id="defaultpanel" data-theme="a" data-display="overlay">
+ 
+    <div class="panel-content" align="center">
+      <h3>Menú</h3>
+<img src="imagenes/T-Rex.png" width="170" height="74">
+
+<div data-role="controlgroup">
+<a data-role="button" id="B_Rex">T-Rex</a> 
+<a data-role="button">Button</a>
+<a data-role="button">Acerca de</a>
+</div>
+
+      <a href="#demo-links" data-rel="close" data-role="button" data-theme="a" data-icon="delete" data-inline="true">Cerrar</a>
+    </div><!-- /contenido del panel-->
+  </div><!-- /panel de menu -->
+    
+    
+</div>
+
+<div data-role="page" id="Rex" data-theme="a">
+	<div data-role="header" data-position="fixed">
+		<h1>Tyrannosaurus rex</h1>
+                <div align="center">
+        <a href="#principal" data-role="button" data-icon="home" data-iconpos="notext" data-inline="true">Menú</a>
+        </div>   
+	</div>
+	
+    <div data-role="content">	
+    <div align="center">
+    <div>
+    <p>
+    El Tiranosaurio Rex es uno de los dinosaurios más estudiados y más reconocidos por la cultura popular. Su nombre viene del griego Tyranno, que significa literalmente tirano o malvado, que era  quien tenía poder absoluto y la palabra Saurus que significa lagarto, así que es un lagarto tirano al que además se le agrega el Rex, por lo que su nombre completo es el rey de los tiranos lagartos o depredadores, tanto por su tamaño como por su poder. De este dinosaurio sólo se conoce una especie y se cree que vivió hace 65 millones de años, aproximadamente, en lo que se conoce como el periodo Cretácico.
+
+Era un dinosaurio realmente grande, podía medir hasta 12.3 metros de largo, casi como un camión de pasajeros y se piensa que podía pesar entre 6 y 18.4 toneladas. Además tenía una cabeza muy grande, que medía un metro y medio, su cabeza es una de las más grandes conocidas.  Su gran cabeza, estaba equilibrada por una cola muy pesada para mantener su balance y permitirle caminar; el Tiranosaurio era terápodo, esto quiere decir que caminaba en dos patas, éstas estaban cubiertas de almohadillas que no sólo lo protegían contra el terreno sino que eran una especie de resorte, en cada paso el Tiranosaurio ponía gran intensidad que se transmitía a todo su cuerpo para mantener el balance y cierta velocidad.
+
+Una de las principales características del Tiranosaurio Rex es que tenía miembros superiores pequeños, una especie de manos que tenían dos dedos con garras afiladas, pero no te dejes engañar por su tamaño y aparente fragilidad porque eran muy fuertes. Para qué usaba el Tiranosaurio estas extremidades ha sido ampliamente discutido, y aún no hay una respuesta segura, las teorías van desde que se utilizaban  para cazar o para luchar, hasta para levantarse cuando caían de espaldas, porque no había otra forma que hacer fuerza con las manos.
+</p>
+</div>
+    <img src="imagenes/Tyrannosaurus.png" width="382" height="186">
+    </div>
+	
+    </div>
+    
+	<div data-role="footer" data-position="fixed">
+
+		Kimberly Luna Martinez
+	</div>
+</div>
+
+
+    </body>
+
+</html>
